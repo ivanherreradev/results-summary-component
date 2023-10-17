@@ -45,6 +45,8 @@ section {
 
 .container {
   display: flex;
+  box-shadow: 5px 4px 15px -12px #000;
+  border-radius: 32px;
 }
 
 .your-result-container {
@@ -102,4 +104,81 @@ section {
 .your-result-container .result p {
   color: var(--light-lavender);
   opacity: 0.6;
+}
+
+.summary-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-container h2 {
+  font-size: 20px;
+}
+
+.summary-container ul {
+  margin-top: 30px;
+}
+
+.summary-container li {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 10px;
+}
+
+.summary-container li div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary-container .percentage {
+  color: #838383;
+}
+
+.summary-container .percentage b {
+  color: var(--dark-gray-blue);
+}
+
+.summary-container li div img {
+  width: 25px;
+  height: 25px;
+}
+
+.summary-container .reaction {
+  background-color: rgba(255, 87, 87, 0.155);
+  color: var(--light-red);
+}
+
+.summary-container .memory {
+  background-color: rgba(255, 176, 31, 0.1);
+  color: var(--orange-yellow);
+}
+
+.summary-container .verbal {
+  background-color: rgba(0, 189, 145, 0.1);
+  color: var(--green-teal);
+}
+
+.summary-container .visual {
+  background-color: rgba(17, 37, 212, 0.1);
+  color: var(--cobalt-blue);
+}
+
+.summary-container button {
+  margin-top: 40px;
+  padding: 10px;
+  height: 45px;
+  width: 100%;
+  border-radius: 360px;
+  text-align: center;
+  border: none;
+  color: var(--white);
+  background-color: var(--dark-gray-blue);
+  cursor: pointer;
 }
