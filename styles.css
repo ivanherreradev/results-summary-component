@@ -36,6 +36,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin: 5px;
 }
 
 section {
@@ -181,4 +182,47 @@ section {
   color: var(--white);
   background-color: var(--dark-gray-blue);
   cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--bg-light-royal-blue);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    margin: 0;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .your-result-container {
+    border-radius: 0;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+
+  .attribution {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
 }
