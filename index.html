@@ -23,6 +23,9 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="./styles.css" />
 
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
@@ -39,45 +42,16 @@
         </section>
         <section class="summary-container">
           <h2>Summary</h2>
-          <ul>
-            <li class="reaction">
-              <div>
-                <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon" />
-                <p>Reaction</p>
-              </div>
-              <p class="percentage"><b>80</b> / 100</p>
-            </li>
-            <li class="memory">
-              <div>
-                <img src="./assets/images/icon-memory.svg" alt="Memory Icon" />
-                <p>Memory</p>
-              </div>
-              <p class="percentage"><b>92</b> / 100</p>
-            </li>
-            <li class="verbal">
-              <div>
-                <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon" />
-                <p>Verbal</p>
-              </div>
-              <p class="percentage"><b>61</b> / 100</p>
-            </li>
-            <li class="visual">
-              <div>
-                <img src="./assets/images/icon-visual.svg" alt="Visual Icon" />
-                <p>Visual</p>
-              </div>
-              <p class="percentage"><b>72</b> / 100</p>
-            </li>
-          </ul>
+          <ul id="results-list"></ul>
           <button>Continue</button>
         </section>
       </div>
       <footer class="attribution">
         <p>
-          Challenge by 
+          Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by 
+          >. Coded by
           <a href="https://github.com/ivanherreradev" target="_blank">Ivan Herrera</a>.
         </p>
       </footer>
